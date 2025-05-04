@@ -175,6 +175,17 @@
 		(layer "Dwgs.User")
 		(uuid "befa8de4-c637-4e1a-95ae-7bcddbbd0008")
 	)
+	(fp_rect
+		(start -1.3 -0.9)
+		(end 1.3 0.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "6bebf8ae-3f41-4d85-aaff-41b5a7bae67d")
+	)
 	(fp_poly
 		(pts
 			(xy -0.9005 -0.5) (xy -0.9005 -0.7) (xy -1.3005 -0.7) (xy -1.3005 -0.5)
@@ -517,7 +528,7 @@
 		(uuid "de1b8bb8-28c5-4129-b62e-b55b0195535e")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/EASYEDA_MODELS/UQFN-16_L2.6-W1.8-H0.5-P0.40-BL.step"
+	(model "${KIPRJMOD}/../libraries/3dmodels/uqfn-16-2.6mm-1.8mm-0.55mm.stp"
 		(offset
 			(xyz -0.0005 0 0)
 		)
@@ -525,7 +536,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -0 -0 -0)
+			(xyz -0 -180 90)
 		)
 	)
 )
