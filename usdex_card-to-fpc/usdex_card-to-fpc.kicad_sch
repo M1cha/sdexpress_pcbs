@@ -1001,7 +1001,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at -8.89 -20.32 90)
 					(length 3.81)
 					(name "VSS2"
@@ -1055,7 +1055,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at -1.27 -20.32 90)
 					(length 3.81)
 					(name "VSS3"
@@ -1109,7 +1109,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 6.35 -20.32 90)
 					(length 3.81)
 					(name "VSS4"
@@ -1710,7 +1710,7 @@
 			)
 		)
 	)
-	(global_label "REFCLK-{slash}DAT1"
+	(global_label "DATx{slash}REFCLK-"
 		(shape input)
 		(at 45.72 100.33 180)
 		(fields_autoplaced yes)
@@ -1722,7 +1722,7 @@
 		)
 		(uuid "53adbba8-4406-4a21-998a-9d3f29919a15")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.2205 100.33 0)
+			(at 28.4019 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1732,7 +1732,7 @@
 			)
 		)
 	)
-	(global_label "REFCLK-{slash}DAT1"
+	(global_label "DATx{slash}REFCLK-"
 		(shape input)
 		(at 36.83 38.1 180)
 		(fields_autoplaced yes)
@@ -1744,7 +1744,7 @@
 		)
 		(uuid "55e9a4d4-4456-43a4-984a-2492db69eace")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.3305 38.1 0)
+			(at 19.5119 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1776,7 +1776,7 @@
 			)
 		)
 	)
-	(global_label "REFCLK+{slash}DAT0"
+	(global_label "DATx{slash}REFCLK+"
 		(shape input)
 		(at 36.83 35.56 180)
 		(fields_autoplaced yes)
@@ -1788,7 +1788,7 @@
 		)
 		(uuid "73dda2e1-c405-4bcf-9f0f-49ec084145ce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.3305 35.56 0)
+			(at 19.5119 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1952,7 +1952,7 @@
 			)
 		)
 	)
-	(global_label "REFCLK+{slash}DAT0"
+	(global_label "DATx{slash}REFCLK+"
 		(shape input)
 		(at 45.72 102.87 180)
 		(fields_autoplaced yes)
@@ -1964,7 +1964,7 @@
 		)
 		(uuid "fd19aa8e-0b92-4d77-8b6c-548451167da1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.2205 102.87 0)
+			(at 28.4019 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2002,7 +2002,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "m1cha:1x16_FPC_solder"
+		(property "Footprint" "m1cha:usdex-fpc-1x16-0.64mm"
 			(at 50.8 97.79 0)
 			(effects
 				(font

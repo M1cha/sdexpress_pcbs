@@ -3440,7 +3440,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at -8.89 -20.32 90)
 				(length 3.81)
 				(name "VSS2"
@@ -3494,7 +3494,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at -1.27 -20.32 90)
 				(length 3.81)
 				(name "VSS3"
@@ -3548,7 +3548,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at 6.35 -20.32 90)
 				(length 3.81)
 				(name "VSS4"
