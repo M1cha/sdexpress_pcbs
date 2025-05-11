@@ -2289,6 +2289,24 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 20.32 -45.72 90)
+				(length 2.54)
+				(name "MP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "MP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin no_connect line
 				(at 22.86 40.64 180)
 				(length 2.54)
@@ -3923,7 +3941,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_Abracon_ASDMB-4Pin_2.5x2.0mm"
+		(property "Footprint" "m1cha:OSC-SMD_4P-L3.2-W2.5-BL_TG-5006CE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4097,7 +4115,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProLib_pcs_2025-04-29-2:UQFN-16_L2.6-W1.8-P0.40-BL"
+		(property "Footprint" "m1cha:tmux1574"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4773,13 +4791,12 @@
 	(symbol "usdex-fpc-connector"
 		(pin_names
 			(offset 1.016)
-			(hide yes)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
-			(at 0 20.32 0)
+			(at 0 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4787,7 +4804,7 @@
 			)
 		)
 		(property "Value" "usdex-fpc-connector"
-			(at 0 -22.86 0)
+			(at -2.286 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4812,21 +4829,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x16, script generated"
+		(property "Description" "Generic connector, single row, 01x18, script generated"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "connector"
@@ -4848,6 +4857,18 @@
 			)
 		)
 		(symbol "usdex-fpc-connector_1_1"
+			(polyline
+				(pts
+					(xy -1.27 20.32) (xy -0.508 20.32)
+				)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
 					(xy -1.27 17.78) (xy -0.508 17.78)
@@ -5032,6 +5053,30 @@
 				(pts
 					(xy -1.27 -20.32) (xy -0.508 -20.32)
 				)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -22.86) (xy -0.508 -22.86)
+				)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 19.812)
+				(mid -0.5058 20.32)
+				(end 0 20.828)
 				(stroke
 					(width 0.1524)
 					(type default)
@@ -5232,10 +5277,22 @@
 					(type none)
 				)
 			)
+			(arc
+				(start 0 -23.368)
+				(mid -0.5058 -22.86)
+				(end 0 -22.352)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin power_out line
-				(at -5.08 17.78 0)
+				(at -5.08 20.32 0)
 				(length 3.81)
-				(name "Pin_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5251,9 +5308,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 15.24 0)
+				(at -5.08 17.78 0)
 				(length 3.81)
-				(name "Pin_2"
+				(name "PCIe_RX+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5269,9 +5326,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 12.7 0)
+				(at -5.08 15.24 0)
 				(length 3.81)
-				(name "Pin_3"
+				(name "PXIe_RX-"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5287,9 +5344,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 10.16 0)
+				(at -5.08 12.7 0)
 				(length 3.81)
-				(name "Pin_4"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5305,9 +5362,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 7.62 0)
+				(at -5.08 10.16 0)
 				(length 3.81)
-				(name "Pin_5"
+				(name "PCIe_TX-"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5323,9 +5380,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 5.08 0)
+				(at -5.08 7.62 0)
 				(length 3.81)
-				(name "Pin_6"
+				(name "PCIe_TX+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5341,9 +5398,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 2.54 0)
+				(at -5.08 5.08 0)
 				(length 3.81)
-				(name "Pin_7"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5359,9 +5416,9 @@
 				)
 			)
 			(pin power_out line
-				(at -5.08 0 0)
+				(at -5.08 2.54 0)
 				(length 3.81)
-				(name "Pin_8"
+				(name "+1V8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5377,9 +5434,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -2.54 0)
+				(at -5.08 0 0)
 				(length 3.81)
-				(name "Pin_9"
+				(name "DAT1/REFCLK-"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5395,9 +5452,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -5.08 0)
+				(at -5.08 -2.54 0)
 				(length 3.81)
-				(name "Pin_10"
+				(name "DAT0/REFCLK+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5413,9 +5470,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -7.62 0)
+				(at -5.08 -5.08 0)
 				(length 3.81)
-				(name "Pin_11"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5431,9 +5488,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -10.16 0)
+				(at -5.08 -7.62 0)
 				(length 3.81)
-				(name "Pin_12"
+				(name "CLK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5449,9 +5506,9 @@
 				)
 			)
 			(pin power_out line
-				(at -5.08 -12.7 0)
+				(at -5.08 -10.16 0)
 				(length 3.81)
-				(name "Pin_13"
+				(name "+3V3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5467,9 +5524,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -15.24 0)
+				(at -5.08 -12.7 0)
 				(length 3.81)
-				(name "Pin_14"
+				(name "+3V3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5485,9 +5542,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -17.78 0)
+				(at -5.08 -15.24 0)
 				(length 3.81)
-				(name "Pin_15"
+				(name "+3V3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5503,9 +5560,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -20.32 0)
+				(at -5.08 -17.78 0)
 				(length 3.81)
-				(name "Pin_16"
+				(name "CMD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5513,6 +5570,60 @@
 					)
 				)
 				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -20.32 0)
+				(length 3.81)
+				(name "~{PERST}/DAT3/CD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -22.86 0)
+				(length 3.81)
+				(name "~{CLKREQ}/DAT2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -25.4 0)
+				(length 3.81)
+				(name "MP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "MP"
 					(effects
 						(font
 							(size 1.27 1.27)
